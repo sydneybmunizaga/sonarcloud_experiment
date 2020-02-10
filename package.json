@@ -1,0 +1,23 @@
+{
+  "name": "sonarcloud_experiment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage --reporters=jest-junit --reporters=default"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sydneybarlow/sonarcloud_experiment.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sydneybarlow/sonarcloud_experiment/issues"
+  },
+  "homepage": "https://github.com/sydneybarlow/sonarcloud_experiment#readme",
+  "devDependencies": {
+    "jest": "^25.1.0",
+    "jest-junit": "^10.0.0"
+  }
+}
