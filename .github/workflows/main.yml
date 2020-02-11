@@ -8,12 +8,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
-variables:
-  sonar.projectKey: sydneybarlow_sonarcloud_experiment:master
-  sonar.organization: sydneybarlow
-  sonar.projectName: sonarcloud_experiment
-  sonar.projectVersion: 1.0
-
     steps:
       - uses: actions/checkout@v2
       - name: NPM Install
@@ -22,11 +16,7 @@ variables:
         run: npm test
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@v1.1
+        if: always()
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        inputs:
-              configMode: 'file'
-              # This sonar-project.properties file is usually placed at the root level of the repository. However, you can define your own path. 
-              # Read more about this file and its expected format : https://docs.sonarqube.org/latest/analysis/scan/sonarscanner/
-              configFile: 'sonar-project.properties' 
