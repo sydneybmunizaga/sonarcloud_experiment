@@ -1,4 +1,4 @@
-// const testController = require("./utils/testController");
+// import testController from "./utils/testController";
 
 // describe("this test will be flaky", () => {
 //   it("will be flaky 1", () => {
