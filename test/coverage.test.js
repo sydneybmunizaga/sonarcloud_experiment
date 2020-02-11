@@ -1,4 +1,4 @@
-import { firstFunction } from "../src/myAwesomeModule";
+const { firstFunction } = require("../src/myAwesomeModule");
 
 describe("testing coverage reporter", () => {
   it("first function", () => {
