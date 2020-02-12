@@ -15,10 +15,10 @@ jobs:
       - name: NPM Install
         run: npm install
       - name: Run tests
-        run: | 
-        npm test
-        mv coverage/test-reporter.xml coverage/test-reporter-orig.xml
-        sed 's?'`pwd`'??g' coverage/test-reporter-orig.xml > coverage/test-reporter.xml
+        run: |
+          npm test
+          mv coverage/test-reporter.xml coverage/test-reporter-orig.xml
+          sed 's?'`pwd`'??g' coverage/test-reporter-orig.xml > coverage/test-reporter.xml
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@v1.1
         if: always()
