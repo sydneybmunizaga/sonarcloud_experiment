@@ -23,6 +23,6 @@
   },
   "jestSonar": {
     "reportPath": "coverage",
-    "reportFile": "test-report.xml"
+    "reportFile": "test-reporter.xml"
   }
 }
