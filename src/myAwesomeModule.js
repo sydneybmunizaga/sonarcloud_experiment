@@ -1,9 +1,11 @@
-export function firstFunction() {
-  return true;
-}
-export function secondFunction() {
-  return true;
-}
-export function thirdFunction() {
-  return true;
-}
+module.exports = {
+  firstFunction() {
+    return true;
+  },
+  secondFunction() {
+    return true;
+  },
+  thirdFunction() {
+    return true;
+  }
+};

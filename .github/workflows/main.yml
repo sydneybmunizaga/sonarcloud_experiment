@@ -20,6 +20,7 @@ jobs:
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+<<<<<<< HEAD
       - uses: actions/upload-artifact@v1
         if: always()
         with:
@@ -30,3 +31,5 @@ jobs:
         #   # This sonar-project.properties file is usually placed at the root level of the repository. However, you can define your own path.
         #   # Read more about this file and its expected format : https://docs.sonarqube.org/latest/analysis/scan/sonarscanner/
         #   configFile: "sonar-project.properties"
+=======
+>>>>>>> 70e9c055da535d5c6fb1134361b691a2aaa4ea88
