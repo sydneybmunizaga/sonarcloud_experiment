@@ -22,9 +22,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - uses: actions/upload-artifact@v1
         if: always()
-        with:
-          name: cypress-videos
-          path: cypress/videos
         # inputs:
         #   configMode: "file"
         #   # This sonar-project.properties file is usually placed at the root level of the repository. However, you can define your own path.
