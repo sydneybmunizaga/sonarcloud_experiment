@@ -24,7 +24,7 @@ jobs:
         uses: actions/upload-artifact@v1
         if: always()
         with:
-          name: test-report.xml
+          name: test-reporter.xml
           path: ./coverage/
         # inputs:
         #   configMode: "file"
