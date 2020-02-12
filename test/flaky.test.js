@@ -1,4 +1,4 @@
-const testController = require("./utils/testController");
+const testController = require("../utils/testController");
 
 describe("this test will be flaky", () => {
   it("will be flaky 1", () => {

@@ -1,4 +1,4 @@
-export default (opts = {}) => {
+module.exports = (opts = {}) => {
   if (opts.ignore === true) {
     return true;
   }
