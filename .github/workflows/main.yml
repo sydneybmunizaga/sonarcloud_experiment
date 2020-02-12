@@ -22,7 +22,7 @@ jobs:
       - name: Strip out paths in report
         run: |
           mv coverage/test-reporter.xml coverage/test-reporter-orig.xml
-          sed 's?'`pwd`'??g' coverage/test-reporter-orig.xml > coverage/test-reporter.xml
+          sed 's?'`pwd`'?.?g' coverage/test-reporter-orig.xml > coverage/test-reporter.xml
         if: always()
 
       - name: SonarCloud Scan
